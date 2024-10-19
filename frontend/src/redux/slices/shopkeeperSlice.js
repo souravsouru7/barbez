@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5000'; // Replace with your backend URL
+axios.defaults.baseURL = 'http://16.171.150.97:5000'; // Replace with your backend URL
 
 // Thunk for registering shopkeeper
 export const registerShopkeeper = createAsyncThunk(

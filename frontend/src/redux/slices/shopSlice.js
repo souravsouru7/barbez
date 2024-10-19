@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Set the base URL for Axios
-axios.defaults.baseURL = 'http://localhost:5000'; 
+axios.defaults.baseURL = 'http://16.171.150.97:5000';
 
 // Thunk for fetching all shops
 export const fetchAllShops = createAsyncThunk(

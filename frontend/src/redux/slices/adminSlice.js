@@ -1,20 +1,20 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'http://16.171.150.97:5000';
 
 
 const initialState = {
    
     shopkeepers: [],
-    shopkeepersStatus: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+    shopkeepersStatus: 'idle', 
     shopkeepersError: null,
     shopkeeper: null, // New state for a single shopkeeper's details
     shopkeeperStatus: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
     shopkeeperError: null // New state for errors related to shopkeeper details
 };
 
-// Async thunk for logging in an admin
+
 
 
 // Async thunk to fetch shopkeepers
